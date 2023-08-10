@@ -1,11 +1,11 @@
-#include "CStbImage.h"
-
 #define STB_IMAGE_IMPLEMENTATION
 #define STB_IMAGE_STATIC
 #include "stb_image.h"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #define STB_IMAGE_WRITE_STATIC
 #include "stb_image_write.h"
+
+#include "CStbImage.h"
 
 unsigned char* load_image(const char* path, int* width, int* height, int* channels, int desired_channels) {
     stbi_uc* pixels = stbi_load(path, width, height, channels, desired_channels);
