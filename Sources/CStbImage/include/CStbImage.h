@@ -1,7 +1,10 @@
 #ifndef CStbImage_h
 #define CStbImage_h
 
+#import "stb_image.h"
 #import "stb_truetype.h"
+#import "stb_image_write.h"
+#include "stb_image_resize.h"
 
 // To avoid confliction with other libraries which also have stb_*, we need STB_*_STATIC flags to make functions private.
 // https://github.com/t-ae/swim/pull/11
